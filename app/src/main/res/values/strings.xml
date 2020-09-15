@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Doe Sangue!</string>
+    <string name="dados_do_paciente">Dados Do Paciente</string>
+    <string name="nome">Nome:</string>
+    <string name="idade">Idade:</string>
+    <string name="tipo_sanguineo">Tipo Sanguíneo:</string>
+    <string name="dados_do_hospital">Dados Do Hospital</string>
+    <string name="hospital">Hospital:</string>
+    <string name="cidade">Cidade:</string>
+    <string name="bairro">Bairro:</string>
+    <string name="rua">Rua:</string>
+    <string name="numero">Número:</string>
+</resources>

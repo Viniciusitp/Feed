@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/borda"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_view_usuario"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            tools:srcCompat="@tools:sample/avatars"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:text="Usuário"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_view_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="07/09/2020"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/text_view_hora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="20:00"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorRed"
+            android:gravity="center_horizontal"
+            android:text="@string/dados_do_paciente"
+            android:textColor="@color/colorBlack"
+            android:textSize="17sp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout style="@style/LinearLayout">
+
+            <TextView
+                style="@style/TextView"
+                android:layout_marginRight="10dp"
+                android:text="@string/nome"></TextView>
+
+            <TextView
+                android:id="@+id/text_view_nome"
+                style="@style/TextView"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout">
+
+            <TextView
+                style="@style/TextView"
+                android:layout_marginRight="10dp"
+                android:text="@string/idade"></TextView>
+
+            <TextView
+                android:id="@+id/text_view_idade"
+                style="@style/TextView"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout">
+
+            <TextView
+                style="@style/TextView"
+                android:layout_marginRight="10dp"
+                android:text="@string/tipo_sanguineo"></TextView>
+
+            <TextView
+                android:id="@+id/text_view_tipoSanguineo"
+                style="@style/TextView"></TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorRed"
+            android:gravity="center_horizontal"
+            android:text="@string/dados_do_hospital"
+            android:textColor="@color/colorBlack"
+            android:textSize="17sp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout style="@style/LinearLayout">
+
+            <TextView
+                style="@style/TextView"
+                android:layout_marginRight="10dp"
+                android:text="@string/hospital"></TextView>
+
+            <TextView
+                android:id="@+id/text_view_hospital"
+                style="@style/TextView"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout">
+
+            <TextView
+                style="@style/TextView"
+                android:layout_marginRight="10dp"
+                android:text="@string/cidade"></TextView>
+
+            <TextView
+                android:id="@+id/text_view_cidade"
+                style="@style/TextView"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout">
+
+            <TextView
+                style="@style/TextView"
+                android:layout_marginRight="10dp"
+                android:text="@string/bairro"></TextView>
+
+            <TextView
+                android:id="@+id/text_view_bairro"
+                style="@style/TextView"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout">
+
+            <TextView
+                style="@style/TextView"
+                android:layout_marginRight="10dp"
+                android:text="@string/rua"></TextView>
+
+            <TextView
+                android:id="@+id/text_view_rua"
+                style="@style/TextView"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout">
+
+            <TextView
+                style="@style/TextView"
+                android:layout_marginRight="10dp"
+                android:text="@string/numero"></TextView>
+
+            <TextView
+                android:id="@+id/text_view_numero"
+                style="@style/TextView"></TextView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"></View>
+
+    </LinearLayout>
+
+</LinearLayout>
