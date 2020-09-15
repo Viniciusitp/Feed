@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
         post1.setTextViewNumero("397");
 
         posts.add(post1);
-        postAdapter.setPosts(posts);
-        postAdapter.notifyDataSetChanged();
+
+
 
         Post post2 = new Post();
         post2.setImageViewUsuario(R.drawable.usuaria);
@@ -65,8 +65,7 @@ public class MainActivity extends AppCompatActivity {
         post2.setTextViewNumero("397");
 
         posts.add(post2);
-        postAdapter.setPosts(posts);
-        postAdapter.notifyDataSetChanged();
+
 
         Post post3 = new Post();
         post3.setImageViewUsuario(R.drawable.usuaria);
@@ -84,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
         posts.add(post3);
         postAdapter.setPosts(posts);
-        postAdapter.notifyDataSetChanged();
+
 
     }
 
@@ -164,6 +163,7 @@ public class MainActivity extends AppCompatActivity {
 
         public void setPosts(List<Post> posts) {
             this.posts = posts;
+            this.notifyDataSetChanged();
         }
     }
 
@@ -190,6 +190,7 @@ public class MainActivity extends AppCompatActivity {
         public void setTextViewData(String textViewData) {
             TextViewData = textViewData;
         }
+
 
         public int getImageViewUsuario() {
             return ImageViewUsuario;
