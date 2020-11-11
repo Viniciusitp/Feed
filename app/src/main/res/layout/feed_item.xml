@@ -4,6 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="5dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="3dp"
+    android:padding="7dp"
     android:background="@drawable/borda"
     android:orientation="vertical">
 
@@ -25,7 +29,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/text_view_usuario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -34,14 +38,14 @@
                 android:text="Usuário"
                 android:textColor="@color/colorBlack"
                 android:textSize="15sp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/text_view_data"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -49,9 +53,9 @@
                     android:text="07/09/2020"
                     android:textColor="@color/colorBlack"
                     android:textSize="12sp"
-                    android:textStyle="bold"></TextView>
+                    android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/text_view_hora"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -59,7 +63,7 @@
                     android:text="20:00"
                     android:textColor="@color/colorBlack"
                     android:textSize="12sp"
-                    android:textStyle="bold"></TextView>
+                    android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
 
             </LinearLayout>
 
@@ -70,9 +74,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
         android:orientation="vertical">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
@@ -83,48 +88,35 @@
             android:text="@string/dados_do_paciente"
             android:textColor="@color/colorBlack"
             android:textSize="17sp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
 
         <LinearLayout style="@style/LinearLayout">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 style="@style/TextView"
                 android:layout_marginRight="10dp"
-                android:text="@string/nome"></TextView>
+                android:text="@string/nome"></androidx.appcompat.widget.AppCompatTextView>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/text_view_nome"
-                style="@style/TextView"></TextView>
+                style="@style/TextView"></androidx.appcompat.widget.AppCompatTextView>
 
         </LinearLayout>
 
         <LinearLayout style="@style/LinearLayout">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 style="@style/TextView"
                 android:layout_marginRight="10dp"
-                android:text="@string/idade"></TextView>
+                android:text="@string/tipo_sanguineo"></androidx.appcompat.widget.AppCompatTextView>
 
-            <TextView
-                android:id="@+id/text_view_idade"
-                style="@style/TextView"></TextView>
-
-        </LinearLayout>
-
-        <LinearLayout style="@style/LinearLayout">
-
-            <TextView
-                style="@style/TextView"
-                android:layout_marginRight="10dp"
-                android:text="@string/tipo_sanguineo"></TextView>
-
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/text_view_tipoSanguineo"
-                style="@style/TextView"></TextView>
+                style="@style/TextView"></androidx.appcompat.widget.AppCompatTextView>
 
         </LinearLayout>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -133,72 +125,60 @@
             android:text="@string/dados_do_hospital"
             android:textColor="@color/colorBlack"
             android:textSize="17sp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
 
         <LinearLayout style="@style/LinearLayout">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 style="@style/TextView"
                 android:layout_marginRight="10dp"
-                android:text="@string/hospital"></TextView>
+                android:text="@string/hospital"></androidx.appcompat.widget.AppCompatTextView>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/text_view_hospital"
-                style="@style/TextView"></TextView>
+                style="@style/TextView"></androidx.appcompat.widget.AppCompatTextView>
 
         </LinearLayout>
 
         <LinearLayout style="@style/LinearLayout">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 style="@style/TextView"
                 android:layout_marginRight="10dp"
-                android:text="@string/cidade"></TextView>
+                android:text="@string/cidade"></androidx.appcompat.widget.AppCompatTextView>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/text_view_cidade"
-                style="@style/TextView"></TextView>
+                style="@style/TextView"></androidx.appcompat.widget.AppCompatTextView>
 
         </LinearLayout>
 
         <LinearLayout style="@style/LinearLayout">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 style="@style/TextView"
                 android:layout_marginRight="10dp"
-                android:text="@string/bairro"></TextView>
+                android:text="@string/bairro"></androidx.appcompat.widget.AppCompatTextView>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/text_view_bairro"
-                style="@style/TextView"></TextView>
+                style="@style/TextView"></androidx.appcompat.widget.AppCompatTextView>
 
         </LinearLayout>
 
         <LinearLayout style="@style/LinearLayout">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 style="@style/TextView"
                 android:layout_marginRight="10dp"
-                android:text="@string/rua"></TextView>
+                android:text="@string/rua"></androidx.appcompat.widget.AppCompatTextView>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/text_view_rua"
-                style="@style/TextView"></TextView>
+                style="@style/TextView"></androidx.appcompat.widget.AppCompatTextView>
 
         </LinearLayout>
 
-        <LinearLayout style="@style/LinearLayout">
-
-            <TextView
-                style="@style/TextView"
-                android:layout_marginRight="10dp"
-                android:text="@string/numero"></TextView>
-
-            <TextView
-                android:id="@+id/text_view_numero"
-                style="@style/TextView"></TextView>
-
-        </LinearLayout>
 
         <View
             android:layout_width="match_parent"
@@ -207,5 +187,6 @@
             android:layout_marginBottom="10dp"></View>
 
     </LinearLayout>
+
 
 </LinearLayout>

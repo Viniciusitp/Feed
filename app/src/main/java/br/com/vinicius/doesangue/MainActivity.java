@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         postAdapter = new PostAdapter();
@@ -38,13 +40,12 @@ public class MainActivity extends AppCompatActivity {
         post1.setTextViewHora("19:00");
         post1.setTextViewUsuario("Pedro Silva");
         post1.setTextViewNome("João Carlos Maia");
-        post1.setTextViewIdade("39");
         post1.setTextViewTipoSanguineo("O+");
         post1.setTextViewHospital("Hospital São José do Avaí");
         post1.setTextViewCidade("Itaperuna");
         post1.setTextViewBairro("Centro");
         post1.setTextViewRua("Cel. Luís Ferraz");
-        post1.setTextViewNumero("397");
+
 
         posts.add(post1);
 
@@ -56,13 +57,11 @@ public class MainActivity extends AppCompatActivity {
         post2.setTextViewHora("19:30");
         post2.setTextViewUsuario("Carlos Eduardo");
         post2.setTextViewNome("Josicleide Lemos");
-        post2.setTextViewIdade("42");
         post2.setTextViewTipoSanguineo("O-");
         post2.setTextViewHospital("Hospital São José do Avaí");
         post2.setTextViewCidade("Itaperuna");
         post2.setTextViewBairro("Centro");
         post2.setTextViewRua("Cel. Luís Ferraz");
-        post2.setTextViewNumero("397");
 
         posts.add(post2);
 
@@ -73,13 +72,11 @@ public class MainActivity extends AppCompatActivity {
         post3.setTextViewHora("20:00");
         post3.setTextViewUsuario("Mário Lima");
         post3.setTextViewNome("Lucas Santos");
-        post3.setTextViewIdade("33");
         post3.setTextViewTipoSanguineo("O+");
         post3.setTextViewHospital("Hospital São José do Avaí");
         post3.setTextViewCidade("Itaperuna");
         post3.setTextViewBairro("Centro");
         post3.setTextViewRua("Cel. Luís Ferraz");
-        post3.setTextViewNumero("397");
 
         posts.add(post3);
         postAdapter.setPosts(posts);
@@ -94,13 +91,11 @@ public class MainActivity extends AppCompatActivity {
         private final TextView textViewHora;
         private final TextView textViewUsuario;
         private final TextView textViewNome;
-        private final TextView textViewIdade;
         private final TextView textViewTipoSanguineo;
         private final TextView TextViewHospital;
         private final TextView textViewCidade;
         private final TextView textViewBairro;
         private final TextView textViewRua;
-        private final TextView textViewNumero;
 
 
         public PostViewHolder(@NonNull View itemView) {
@@ -111,13 +106,12 @@ public class MainActivity extends AppCompatActivity {
             textViewHora = itemView.findViewById(R.id.text_view_hora);
             textViewUsuario = itemView.findViewById(R.id.text_view_usuario);
             textViewNome = itemView.findViewById(R.id.text_view_nome);
-            textViewIdade = itemView.findViewById(R.id.text_view_idade);
             textViewTipoSanguineo = itemView.findViewById(R.id.text_view_tipoSanguineo);
             TextViewHospital = itemView.findViewById(R.id.text_view_hospital);
             textViewCidade = itemView.findViewById(R.id.text_view_cidade);
             textViewBairro = itemView.findViewById(R.id.text_view_bairro);
             textViewRua = itemView.findViewById(R.id.text_view_rua);
-            textViewNumero = itemView.findViewById(R.id.text_view_numero);
+
         }
 
         void bind(Post post){
@@ -126,13 +120,11 @@ public class MainActivity extends AppCompatActivity {
             textViewHora.setText(post.getTextViewHora());
             textViewUsuario.setText(post.getTextViewUsuario());
             textViewNome.setText(post.getTextViewNome());
-            textViewIdade.setText(post.getTextViewIdade());
             textViewTipoSanguineo.setText(post.getTextViewTipoSanguineo());
             TextViewHospital.setText(post.getTextViewHospital());
             textViewCidade.setText(post.getTextViewCidade());
             textViewBairro.setText(post.getTextViewBairro());
             textViewRua.setText(post.getTextViewRua());
-            textViewNumero.setText(post.getTextViewNumero());
         }
     }
 
@@ -174,13 +166,11 @@ public class MainActivity extends AppCompatActivity {
         private String TextViewData;
         private String TextViewUsuario;
         private String TextViewNome;
-        private String TextViewIdade;
         private String TextViewTipoSanguineo;
         private String TextViewHospital;
         private String TextViewCidade;
         private String TextViewBairro;
         private String TextViewRua;
-        private String TextViewNumero;
 
 
         public String getTextViewData() {
@@ -224,13 +214,6 @@ public class MainActivity extends AppCompatActivity {
             TextViewNome = textViewNome;
         }
 
-        public String getTextViewIdade() {
-            return TextViewIdade;
-        }
-
-        public void setTextViewIdade(String textViewIdade) {
-            TextViewIdade = textViewIdade;
-        }
 
         public String getTextViewTipoSanguineo() {
             return TextViewTipoSanguineo;
@@ -272,12 +255,5 @@ public class MainActivity extends AppCompatActivity {
             TextViewRua = textViewRua;
         }
 
-        public String getTextViewNumero() {
-            return TextViewNumero;
-        }
-
-        public void setTextViewNumero(String textViewNumero) {
-            TextViewNumero = textViewNumero;
-        }
     }
 }
